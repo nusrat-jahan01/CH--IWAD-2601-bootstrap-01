@@ -1,0 +1,213 @@
+html, body {
+    overflow-x: hidden; /* ডান পাশের বাড়তি কাটা অংশ বা স্ক্রল বন্ধ করবে */
+    width: 100%;
+}
+
+/* মোবাইলে বড় হেডিংয়ের সাইজ কিছুটা ছোট করা */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px !important; /* আপনার বড় টাইটেলটি মোবাইলে সুন্দরভাবে ফিট হবে */
+    }
+}
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "PT Sans", sans-serif;
+  --third-family: "Potta One", sans-serif;
+  --font3: "Baloo Da 2", sans-serif;
+  --font4: "Irish Grover", sans-serif;
+}
+body{
+    font-family: var(--font-family);
+
+}
+
+/*==========nav start=====*/
+#nav ul li a{
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+color: #353535;
+text-transform: uppercase;
+padding: 18px 20.5px !important;
+position: relative;
+}
+#nav ul li a:hover{
+color: #f8bc17;
+}
+#nav ul li a::after{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color:#353535;
+  left:0;
+  bottom:0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+  #nav ul li a:hover::after{
+    opacity: 1;
+    visibility: visible;
+      width: 100%;
+  }
+
+
+/*==========nav end=======*/
+
+/*========= Hero Start=======*/
+#hero h5 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: #353535;
+}
+#hero h1{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: #353535;
+}
+#hero p {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+color: #353535;
+}
+ .btns{
+  display: flex;
+  gap:35px;
+
+}
+ .btns a:first-child {
+  background: #FFCC00;
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: var(--font-family);
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 180%;
+color: #fff;
+border-radius: 20px;
+text-decoration: none;
+ }
+ .btns a:last-child {
+  background: transfarent;
+  display: inline-block;
+  padding: 16px 40px;
+  font-family: var(--font-family);
+ font-weight: 600;
+ font-size: 18px;
+ line-height: 180%;
+color: #353535;
+border-radius: 20px;
+text-decoration: none;
+outline: 1px solid #353535;
+ }
+.follow{
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+#hero .social_icons{
+  display: flex;
+  gap: 32px;
+}
+
+#hero .social_icons a {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F3F3;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+#hero .social_icons a:hover{
+    transform: rotate(45deg);
+}
+/*========= Hero End==========*/
+/*=========img strat==========*/
+/* =========================================
+   About Me সেকশনের সম্পূর্ণ ডিজাইন
+   ========================================= */
+
+/* ১. মূল সেকশন ও হলুদ গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+#about {
+    background: linear-gradient(90deg, #FFCC00 0%, #FFF5CC 100%);
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ২. ছবি ও লেখাকে পাশাপাশি এবং নিচের বর্ডারে সমান রাখা */
+#about .row {
+    display: flex;
+    align-items: flex-end; 
+    /* এটি ছবিটিকে নিচের বর্ডারের সাথে একদম লাগিয়ে রাখবে */
+}
+
+/* ৩. বাম পাশের ছবির সাইজ ও পজিশন */
+#about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ৪. ডান পাশের লেখার অংশ (যাতে নিচের বর্ডার থেকে কিছুটা ওপরে থাকে) */
+#about .col-lg-6:last-child {
+    padding-bottom: 60px;
+}
+
+/* ৫. শিরোনাম (About Me) স্টাইল */
+#about h2, 
+#about h3 {
+    font-size: 44px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 20px;
+}
+
+/* ৬. বর্ণনা (Paragraph) স্টাইল */
+#about p {
+    font-size: 16px;
+    color: #353535;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* ৭. 'See More' বাটনের আউটলাইন স্টাইল */
+.about-outline-btn {
+    background-color: transparent !important;
+    border: 1px solid #353535 !important;
+    color: #353535 !important;
+    padding: 12px 32px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-outline-btn:hover {
+    background-color: #353535 !important;
+    color: #FFFFFF !important;
+}
+
+/* ৮. নিচের ডান কোণার সবুজ অর্ধবৃত্ত শেপ */
+.green-shape {
+    position: absolute;
+    bottom: -65px;
+    right: -45px;
+    width: 140px;
+    height: 140px;
+    background-color: #52AB70;
+    border-radius: 50%;
+}
+/*======about img end===*/
+/*=========img strat==========*/

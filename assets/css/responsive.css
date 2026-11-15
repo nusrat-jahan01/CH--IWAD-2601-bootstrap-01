@@ -1,0 +1,26 @@
+@media (max-width: 768px){
+#nav{
+    padding: 18px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+   } 
+#nav .mobile_menu_bar{
+    background-color: transparent;
+    border:none;
+}
+
+}
+.mobile_menu_offcanvas{
+    max-width: 300%;
+}
+#hero h5 {
+font-size: 20px;
+}
+#hero h1{
+font-size: 40px;
+}
+#hero p{
+font-size: 16px;
+}
+
+
